@@ -7,24 +7,24 @@ const Header = () => {
   return (
     <div className="container nav-area">
       <div className="row">
-        <div className="col-xl-4">
+        <div className="col">
           <div className="icon">
             <Link to="/">
               <i className="fa-solid fa-book-journal-whills"></i>
             </Link>
           </div>
         </div>
-        <div className="col-xl-8">
+        <div className="col-8">
           <div className="nav-container">
             <Nav className="justify-content-end" activeKey="/home">
               <Nav.Item>
                 <Link to="/blog">Blog</Link>
               </Nav.Item>
               <Nav.Item>
-                <Link to="/about">About</Link>
+                <Link to="/Statistics">Statistics</Link>
               </Nav.Item>
               <Nav.Item>
-                <Link to="/blog">Blog</Link>
+                <Link to="/blog">Question</Link>
               </Nav.Item>
             </Nav>
           </div>

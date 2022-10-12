@@ -7,6 +7,7 @@ import Quiestion from "./Question/Quiestion";
 import Home from "./Home/Home";
 import { loader } from "react-router-dom";
 import Single from "./single/Single";
+import Statistics from "./Statistics/Statistics";
 
 function App() {
   let router = createBrowserRouter([
@@ -26,8 +27,11 @@ function App() {
           element: <Quiestion></Quiestion>,
         },
         {
-          path: "/about",
-          element: <h1>About</h1>,
+          path: "/Statistics",
+          loader: () => {
+            return fetch("https://openapi.programming-hero.com/api/quiz");
+          },
+          element: <Statistics></Statistics>,
         },
         {
           path: "/quiz/:id",
@@ -37,6 +41,10 @@ function App() {
             );
           },
           element: <Single></Single>,
+        },
+        {
+          path: "*",
+          element: <h1>Nothing Found</h1>,
         },
       ],
     },

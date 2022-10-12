@@ -1,0 +1,10 @@
+.chart-container {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and(max-width: 800px) {
+  .chart-container {
+    width: 300px;
+  }
+}

@@ -19,7 +19,7 @@ const Home = () => {
     <div>
       <div className="container">
         <div className="row">
-          <div className="col title-header">
+          <div className="col-12 col-sm-12 title-header">
             <div className="title">
               <h1>Practice Your Knowledge</h1>
               <p>
@@ -33,7 +33,7 @@ const Home = () => {
           </div>
         </div>
         <div className="row">
-          <div className="card-container">
+          <div className="col card-container">
             {Categories.map((items) => (
               <Category
                 handleButton={handleButton}
