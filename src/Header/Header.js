@@ -14,7 +14,7 @@ const Header = () => {
             </Link>
           </div>
         </div>
-        <div className="col-8">
+        <div className="col-9">
           <div className="nav-container">
             <Nav className="justify-content-end" activeKey="/home">
               <Nav.Item>
