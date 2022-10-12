@@ -5,11 +5,13 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <div className="container">
+    <div className="container nav-area">
       <div className="row">
         <div className="col-xl-4">
           <div className="icon">
-            <p>sss</p>
+            <Link to="/">
+              <i className="fa-solid fa-book-journal-whills"></i>
+            </Link>
           </div>
         </div>
         <div className="col-xl-8">
@@ -19,7 +21,7 @@ const Header = () => {
                 <Link to="/blog">Blog</Link>
               </Nav.Item>
               <Nav.Item>
-                <Link to="/blog">Blog</Link>
+                <Link to="/about">About</Link>
               </Nav.Item>
               <Nav.Item>
                 <Link to="/blog">Blog</Link>
