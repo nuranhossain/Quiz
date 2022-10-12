@@ -23,6 +23,9 @@
   gap: 30px;
 }
 
+.card-container img {
+  background-color: gainsboro;
+}
 @media screen and (max-width: 800px) {
   .card-container {
     grid-template-columns: repeat(1, 1fr);
