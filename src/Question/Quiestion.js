@@ -1,9 +1,10 @@
 import React from "react";
 import Accordion from "react-bootstrap/Accordion";
+import "./Question.css";
 
 const Quiestion = () => {
   return (
-    <div>
+    <div className="Ques">
       <Accordion defaultActiveKey="0">
         <Accordion.Item eventKey="0">
           <Accordion.Header>
