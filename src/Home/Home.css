@@ -29,9 +29,12 @@
 @media screen and (max-width: 800px) {
   .card-container {
     grid-template-columns: repeat(1, 1fr);
+    text-align: center;
   }
 }
-
+.card-contain {
+  text-align: center;
+}
 .total-quiz {
   margin-top: 12px;
 }
